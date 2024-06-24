@@ -1,53 +1,53 @@
+-- Insert categories
 INSERT INTO ecommerce.tb_categories(id, name, category_root_id) 
 VALUES
-(1, 'ALIMENTOS', NULL),
-(2, 'BEBIDAS', NULL),
-(3, 'LIMPEZA', NULL),
-(4, 'HIGIENE PESSOAL', NULL),
-(5, 'PADARIA', NULL),
-(6, 'ELETRÔNICOS', NULL);
+(1, 'FOOD', NULL),
+(2, 'DRINKS', NULL),
+(3, 'CLEANING', NULL),
+(4, 'PERSONAL HYGIENE', NULL),
+(5, 'BAKERY', NULL),
+(6, 'ELECTRONICS', NULL);
 
--- Add subcategorias de ALIMENTOS
+-- Add subcategories of FOOD
 INSERT INTO ecommerce.tb_categories(name, category_root_id) 
 VALUES
-('FRUTAS', 1),
-('VERDURAS', 1),
-('CARNES', 1),
-('LATICÍNIOS', 1);
+('FRUITS', 1),
+('VEGETABLES', 1),
+('MEATS', 1),
+('DAIRY PRODUCTS', 1);
 
--- Add subcategorias de BEBIDAS
+-- Add subcategories of DRINKS
 INSERT INTO ecommerce.tb_categories(name, category_root_id) 
 VALUES
-('REFRIGERANTES', 2),
-('SUCOS', 2),
-('CERVEJAS', 2);
+('SOFT DRINKS', 2),
+('JUICES', 2),
+('BEERS', 2);
 
--- Add subcategorias de LIMPEZA
+-- Add subcategories of CLEANING
 INSERT INTO ecommerce.tb_categories(name, category_root_id) 
 VALUES
-('LIMPEZA DOMÉSTICA', 3),
-('PRODUTOS DE LAVANDERIA', 3);
+('HOUSEHOLD CLEANING', 3),
+('LAUNDRY PRODUCTS', 3);
 
--- Add subcategorias de HIGIENE PESSOAL
+-- Add subcategories of PERSONAL HYGIENE
 INSERT INTO ecommerce.tb_categories(name, category_root_id) 
 VALUES
-('HIGIENE BUCAL', 4),
-('CUIDADOS COM A PELE', 4),
-('PRODUTOS DE HIGIENE ÍNTIMA', 4);
+('ORAL HYGIENE', 4),
+('SKIN CARE', 4),
+('INTIMATE HYGIENE PRODUCTS', 4);
 
--- Add subcategorias de PADARIA
+-- Add subcategories of BAKERY
 INSERT INTO ecommerce.tb_categories(name, category_root_id) 
 VALUES
-('PÃES', 5),
-('BOLOS', 5);
+('BREADS', 5),
+('CAKES', 5);
 
--- Add subcategorias de ELETRÔNICOS
+-- Add subcategories of ELECTRONICS
 INSERT INTO ecommerce.tb_categories(name, category_root_id) 
 VALUES
 ('TVS', 6),
-('CELULARES', 6),
-('COMPUTADORES', 6);
-
+('CELL PHONES', 6),
+('COMPUTERS', 6);
 
 -- PRODUCTS
 INSERT INTO ecommerce.tb_products(name, brand, details, price, category_id)
@@ -56,9 +56,8 @@ VALUES
 ('IMAC', 'APPLE', '1TB 16GB RAM 4.5GHz 8CORE', 16999.99, 23),
 ('IMAC', 'APPLE', '5TB 128GB RAM 6GHz 12CORE', 99999.99, 23);
 
-
 -- STOCKS
-INSERT INTO ecommerce.tb_stocks(product_id, amount, type, registred_at)
+INSERT INTO ecommerce.tb_stocks(product_id, amount, type, registered_at)
 VALUES
 (1, 100, 'ENTRY', '2024-04-01'),
 (1, 100, 'ENTRY', '2024-04-10'),

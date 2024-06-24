@@ -1,12 +1,12 @@
 ## ECOMMERCE API
 
-API genérica para lojas ecommerce.
+full ecommerce api
 
 
-### Clone e Execute
+### run the project
 
 ```sh
-git clone https://github.com/dalmofelipe/Ecommerce
+git clone https://github.com/FADHILI-Josue/Springboot-Ecommerce.git Ecommerce
 
 cd Ecommerce
 
@@ -16,18 +16,14 @@ docker compose up -d
 
 ./mvnw install -f pom.xml
 
-./mvnw exec:java -Dexec.mainClass="com.dalmofelipe.Ecommerce.EcommerceApplication"
+./mvnw exec:java -Dexec.mainClass="com.fadhili.Ecommerce.EcommerceApplication"
 ```
 
 ### Host
 
-```localhost:8000``` - API Ecommerce na porta padrão 8000
+```localhost:8000``` - API Ecommerce running on port 8000
 
-```localhost:5000``` - Cliente Adminer gestão da base de dados
 
-Acessando Adminer
-
-         Servidor : mysql-db
-          Usuário : root
-            Senha : root
-    Base de dados : ecommerce
+    user : root
+    passowrd : password
+    database : ecommerce
