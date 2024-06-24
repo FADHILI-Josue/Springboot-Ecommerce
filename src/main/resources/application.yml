@@ -1,0 +1,23 @@
+server:
+  port: 8000
+  error:
+    include-stacktrace: never
+
+spring:
+  application:
+    name: Ecommerce
+  datasource:
+    url: jdbc:mysql://localhost:3306/ecommerce
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create
+    open-in-view: false
+  sql:
+    init:
+      data-locations: classpath:data.sql
+      mode: always

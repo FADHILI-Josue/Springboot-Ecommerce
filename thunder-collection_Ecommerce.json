@@ -1,0 +1,202 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Ecommerce",
+    "collectionId": "092a8934-2072-4cf7-b1bc-5950a5a69c2c",
+    "dateExported": "2024-04-27T19:06:56.217Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "147236f7-11e9-43b8-82b7-873611b5eb02",
+            "name": "Categories",
+            "containerId": "",
+            "created": "2024-04-22T14:23:19.604Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "92aefdf4-2879-4947-be08-a0f6a472e434",
+            "name": "Products",
+            "containerId": "",
+            "created": "2024-04-22T14:25:12.410Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "507ad7d6-0ebb-4b2d-a516-b72f227e445b",
+            "name": "Stock",
+            "containerId": "",
+            "created": "2024-04-25T18:14:59.527Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "16a602e2-5001-4bc6-a6e4-d803ccd440f7",
+            "colId": "092a8934-2072-4cf7-b1bc-5950a5a69c2c",
+            "containerId": "147236f7-11e9-43b8-82b7-873611b5eb02",
+            "name": "Get ALL CATEGORIES",
+            "url": "http://localhost:8000/api/categories",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-04-22T14:23:19.604Z",
+            "modified": "2024-04-22T14:23:19.604Z",
+            "headers": []
+        },
+        {
+            "_id": "ec238555-9be5-45f4-922a-fb528238254f",
+            "colId": "092a8934-2072-4cf7-b1bc-5950a5a69c2c",
+            "containerId": "147236f7-11e9-43b8-82b7-873611b5eb02",
+            "name": "Get ONE CATEGORY",
+            "url": "http://localhost:8000/api/categories/23",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-22T14:23:19.606Z",
+            "modified": "2024-04-22T14:47:28.846Z",
+            "headers": []
+        },
+        {
+            "_id": "ad612982-2232-422d-aa32-274805b1cb4c",
+            "colId": "092a8934-2072-4cf7-b1bc-5950a5a69c2c",
+            "containerId": "147236f7-11e9-43b8-82b7-873611b5eb02",
+            "name": "CREATE CATEGORY",
+            "url": "http://localhost:8000/api/categories",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-04-22T14:23:19.607Z",
+            "modified": "2024-04-22T14:23:19.607Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"COMPUTARIA\",\n  \"categoryRootId\": null\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "be042dd4-b4e4-47c1-b074-0897469b3c59",
+            "colId": "092a8934-2072-4cf7-b1bc-5950a5a69c2c",
+            "containerId": "147236f7-11e9-43b8-82b7-873611b5eb02",
+            "name": "CREATE CATEGORY",
+            "url": "http://localhost:8000/api/categories/24",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-04-22T14:23:19.608Z",
+            "modified": "2024-04-22T14:23:19.608Z",
+            "headers": []
+        },
+        {
+            "_id": "ac99a91b-dbf2-4a57-a256-e2b55ce401df",
+            "colId": "092a8934-2072-4cf7-b1bc-5950a5a69c2c",
+            "containerId": "92aefdf4-2879-4947-be08-a0f6a472e434",
+            "name": "GET ALL PRODUCTS",
+            "url": "http://localhost:8000/api/products",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-04-22T14:25:23.452Z",
+            "modified": "2024-04-22T14:25:39.471Z",
+            "headers": []
+        },
+        {
+            "_id": "94dbf0fa-a1d8-4ac3-9ea7-90d90e5b364e",
+            "colId": "092a8934-2072-4cf7-b1bc-5950a5a69c2c",
+            "containerId": "92aefdf4-2879-4947-be08-a0f6a472e434",
+            "name": "GET ONE PRODUCTS",
+            "url": "http://localhost:8000/api/products/2",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-04-22T14:25:50.120Z",
+            "modified": "2024-04-22T14:26:08.605Z",
+            "headers": []
+        },
+        {
+            "_id": "fb8ecf23-6873-4c5a-a524-a9705c600706",
+            "colId": "092a8934-2072-4cf7-b1bc-5950a5a69c2c",
+            "containerId": "92aefdf4-2879-4947-be08-a0f6a472e434",
+            "name": "CREATE PRODUCT",
+            "url": "http://localhost:8000/api/products",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-04-22T14:27:15.310Z",
+            "modified": "2024-04-22T14:59:56.583Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"IMAC\",\n  \"brand\": \"APPLE\",\n  \"details\": \"500GB 16GB RAM 4.5GHz\",\n  \"price\": 15999.99,\n  \"category_id\": 23\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "60c015e7-501c-49d6-8649-f76e1dbb4c01",
+            "colId": "092a8934-2072-4cf7-b1bc-5950a5a69c2c",
+            "containerId": "92aefdf4-2879-4947-be08-a0f6a472e434",
+            "name": "DELETE ONE PRODUCT",
+            "url": "http://localhost:8000/api/products/2",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-04-22T14:57:06.594Z",
+            "modified": "2024-04-22T15:00:26.977Z",
+            "headers": []
+        },
+        {
+            "_id": "77b21a95-efba-44ec-bb91-f30bf4e26ec2",
+            "colId": "092a8934-2072-4cf7-b1bc-5950a5a69c2c",
+            "containerId": "92aefdf4-2879-4947-be08-a0f6a472e434",
+            "name": "UPDATE PRODUCT",
+            "url": "http://localhost:8000/api/products/30",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-04-22T15:00:48.761Z",
+            "modified": "2024-04-27T19:06:28.116Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"IMAC\",\n  \"brand\": \"APPLE\",\n  \"details\": \"25GB 2GB RAM 2GHz\",\n  \"category_id\": 1\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "19b14a0c-1ff2-44aa-b8ee-2d7c975ec240",
+            "colId": "092a8934-2072-4cf7-b1bc-5950a5a69c2c",
+            "containerId": "507ad7d6-0ebb-4b2d-a516-b72f227e445b",
+            "name": "LIST STOCK",
+            "url": "http://localhost:8000/api/stock/products",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-04-25T18:15:25.056Z",
+            "modified": "2024-04-26T14:44:49.006Z",
+            "headers": []
+        },
+        {
+            "_id": "b536c3c0-f86c-4a7f-a831-454549f7872b",
+            "colId": "092a8934-2072-4cf7-b1bc-5950a5a69c2c",
+            "containerId": "507ad7d6-0ebb-4b2d-a516-b72f227e445b",
+            "name": "STOCK CONTROL ENTRY",
+            "url": "http://localhost:8000/api/stock/products",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-04-25T18:17:59.554Z",
+            "modified": "2024-04-26T03:07:26.652Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"productId\": 3,\n  \"amount\": 100,\n  \"type\": \"ENTRY\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "287f8e71-7149-40db-b189-16243b8e1372",
+            "colId": "092a8934-2072-4cf7-b1bc-5950a5a69c2c",
+            "containerId": "507ad7d6-0ebb-4b2d-a516-b72f227e445b",
+            "name": "STOCK CONTROL OUTPUT",
+            "url": "http://localhost:8000/api/stock/products",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-04-26T14:45:31.923Z",
+            "modified": "2024-04-27T19:06:10.966Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"productId\": 3,\n  \"amount\": 200,\n  \"type\": \"OUTPUT\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "MAvzEKL3Zs65xin6PdnhvMKy_katHEgOAcXd0PNbe2YVJzTdSbl9wt7NUB7oZffkroqSGxSbxbljdNe-bJNK2w"
+}
